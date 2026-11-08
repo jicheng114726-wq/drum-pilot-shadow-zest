@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "赤曜",
+      "hasCanvas": true,
+      "bodyTextLen": 157,
+      "bodyTextHash": "ad160c71d69f1606c21ad94ebe4f25a84af45fbe66cfca67ddbd5b1acc5707e4",
+      "bodyTextPrefix": "CHIYAO 赤曜 俯视深空。撑过一波又一波，把火力、护盾和速度抢到手。 开始出击 操作 WASD 或方向键移动。斜向不会更快。",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "赤曜",
+      "hasCanvas": true,
+      "bodyTextLen": 157,
+      "bodyTextHash": "ad160c71d69f1606c21ad94ebe4f25a84af45fbe66cfca67ddbd5b1acc5707e4",
+      "bodyTextPrefix": "CHIYAO 赤曜 俯视深空。撑过一波又一波，把火力、护盾和速度抢到手。 开始出击 操作 WASD 或方向键移动。斜向不会更快。",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

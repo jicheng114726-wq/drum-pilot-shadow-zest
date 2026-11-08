@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #07090f;
+  --color-bg-raised: #10141d;
+  --color-surface: #171d2a;
+  --color-fg: #f4efe4;
+  --color-muted: #9aa3b5;
+  --color-primary: #e8a23a;
+  --color-primary-ink: #1a1206;
+  --color-ice: #7ee0ff;
+  --color-danger: #ff4d5a;
+  --color-border: #2c3548;
+  --font-sans: "Outfit", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei",
+    "WenQuanYi Zen Hei", sans-serif;
+  --font-display: "Orbitron", "Outfit", sans-serif;
+  --radius-lg: 1.25rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    overflow: hidden;
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.overlay-in {
+  animation: rise-in 220ms ease-out;
+}
+
+@utility hud-safe-top {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
+}
+
+@utility hud-safe-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+@utility menu-safe-top {
+  padding-top: max(1.5rem, env(safe-area-inset-top));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay-in {
+    animation: none;
+  }
+}
